@@ -1,0 +1,14 @@
+.genericLinkBox, .genericLinkBoxExpandable {
+    display: inline-block;border:1px solid black;margin-right: 5px;
+    padding:15px;
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+    width:500px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.genericLinkBoxExpandable:hover {
+    padding: 30px;
+}
