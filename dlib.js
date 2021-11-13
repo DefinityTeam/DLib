@@ -1,3 +1,4 @@
+// @license magnet:?xt=urn:btih:8e4f440f4c65981c5bf93c76d35135ba5064d8b7&dn=apache-2.0.txt Apache-2.0
 DLib = {};
 DLib.createBox = ({title, text, titleType='h3', textType='span', breakAfterTitle=false, linkTo=false, container='body', expands=false, id=false, expandedTitle=false, expandedText=false}) => {
     box = '';
@@ -18,3 +19,4 @@ DLib.createBox = ({title, text, titleType='h3', textType='span', breakAfterTitle
 
     //return box;
 }
+// @license-end
