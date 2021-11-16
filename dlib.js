@@ -1,5 +1,20 @@
 // @license magnet:?xt=urn:btih:8e4f440f4c65981c5bf93c76d35135ba5064d8b7&dn=apache-2.0.txt Apache-2.0
 DLib = {};
+
+/**
+ * Create a box
+ * @param {Object} options - Box options
+ * @param {string} options.title - Title of box
+ * @param {string} options.text - Box text
+ * @param {string} options.titleType - The tag used for the title
+ * @param {string} options.textType - The tag used for the text
+ * @param {boolean} options.breakAfterTitle - If there should be a <br> after the title
+ * @param {(string|false)} options.linkTo - Where the box should link to, if anything
+ * @param {boolean} options.expands - If the box should expand on hover
+ * @param {(string|false)} options.id - What the id of the box should be, if any
+ * @param {(string|false)} options.expandedTitle - What the title of the box should change to on expansion, if anything
+ * @param {(string|false)} options.expandedText - What the text of the box should change to on expansion, if anything 
+ */
 DLib.createBox = ({title, text, titleType='h3', textType='span', breakAfterTitle=false, linkTo=false, container='body', expands=false, id=false, expandedTitle=false, expandedText=false}) => {
     box = '';
     box += linkTo ? `<a href="${linkTo}">` : ``;
