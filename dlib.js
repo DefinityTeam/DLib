@@ -37,6 +37,7 @@ DLib.createBox = ({title, text, titleType='h3', textType='span', breakAfterTitle
 
 
 /**
+ * Create a cookie
  * @param {string} name - The name of the cookie
  * @param {string} value - The cookie's value
  * @param {number} expire - In how many seconds should the cookie expire
@@ -46,7 +47,7 @@ DLib.createCookie = (name, value, expire=31536000) => {
 };
 
 /**
- * 
+ * Delete a cookie
  * @param {string} name - The cookie to delete 
  */
 DLib.deleteCookie = (name) => {
