@@ -44,4 +44,12 @@ DLib.createBox = ({title, text, titleType='h3', textType='span', breakAfterTitle
 DLib.createCookie = (name, value, expire=31536000) => {
     document.cookie = `${name}=${value};secure;max-age=${expire};same-site=lax;`;
 };
+
+/**
+ * 
+ * @param {string} name - The cookie to delete 
+ */
+DLib.deleteCookie = (name) => {
+    document.cookie = `${name}="";max-age=0;`;
+}
 // @license-end
